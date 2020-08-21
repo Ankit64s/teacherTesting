@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".profile_teacher">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:background="@drawable/logo"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+            android:layout_marginTop="20dp"
+            android:text="Teacher Portal"
+            android:textSize="27dp"
+            android:textAllCaps="true"
+            android:background="#F3FAF9F9"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:fontFamily="serif-monospace"
+            android:paddingTop="25dp"
+            android:textColor="#F39408"
+            android:paddingRight="10dp"
+            android:paddingLeft="20dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear"
+        android:id="@+id/relative">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Welcome"
+                    android:textStyle="italic"
+                    android:textAllCaps="true"
+                    android:textSize="30dp"
+                    android:fontFamily="serif-monospace"
+                    android:paddingTop="10dp"
+                    android:textColor="#F39408"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/borderedittext"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/text1"/>
+
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewprofile"
+                    android:layout_below="@id/text1"
+                    android:layout_marginTop="40dp"
+                    android:text="View Profile"
+                    android:textSize="25dp"
+                    android:textColor="#F39408"
+                    android:background="@drawable/borderedittext"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="center"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="30dp"/>
+
+                <Button
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/viewprofile"
+                    android:layout_marginTop="40dp"
+                    android:layout_below="@id/text1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="25dp"
+                    android:textColor="#F39408"
+                    android:background="@drawable/borderedittext"
+                    android:text="Student List"
+                    android:textAlignment="center"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="30dp"
+                    android:id="@+id/studentlist"/>
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/homework"
+                    android:layout_below="@id/viewprofile"
+                    android:layout_marginTop="40dp"
+                    android:text="Home Work"
+                    android:textSize="25dp"
+                    android:textColor="#F39408"
+                    android:background="@drawable/borderedittext"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="center"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="30dp"/>
+
+                <Button
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/homework"
+                    android:layout_marginTop="40dp"
+                    android:layout_below="@id/studentlist"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="25dp"
+                    android:textColor="#F39408"
+                    android:background="@drawable/borderedittext"
+                    android:text="Mark Present"
+                    android:textAlignment="center"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="30dp"
+                    android:id="@+id/attendance" />
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notices"
+                    android:layout_below="@id/homework"
+                    android:layout_marginTop="40dp"
+                    android:text="Notices Area"
+                    android:textSize="25dp"
+                    android:textColor="#F39408"
+                    android:background="@drawable/borderedittext"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="center"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="30dp"/>
+
+                <Button
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/notices"
+                    android:layout_marginTop="40dp"
+                    android:layout_below="@id/attendance"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="25dp"
+                    android:textColor="#F39408"
+                    android:background="@drawable/borderedittext"
+                    android:text="Upload Files"
+                    android:textAlignment="center"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="30dp"
+                    android:id="@+id/uploadfiles" />
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viewuploads"
+                    android:layout_below="@id/notices"
+                    android:layout_marginTop="40dp"
+                    android:text="View Uploads"
+                    android:textSize="25dp"
+                    android:textColor="#F39408"
+                    android:background="@drawable/borderedittext"
+                    android:layout_centerInParent="true"
+                    android:textAlignment="center"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="30dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="LOGOUT"
+                    android:id="@+id/teacherlogout"
+                    android:layout_below="@id/viewuploads"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textAllCaps="true"
+                    android:background="@drawable/borderedittext"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:fontFamily="serif-monospace"
+                    android:paddingTop="5dp"
+                    android:textColor="#F39408"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="30dp"/>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

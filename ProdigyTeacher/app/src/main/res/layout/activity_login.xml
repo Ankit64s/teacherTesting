@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:background="@drawable/logo"
+                android:id="@+id/img"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250px"
+                android:layout_toRightOf="@id/img"
+                android:layout_marginTop="20dp"
+                android:text="Login Portal"
+                android:textSize="30dp"
+                android:textAllCaps="true"
+                android:background="#F3FAF9F9"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:fontFamily="serif-monospace"
+                android:paddingTop="25dp"
+                android:textColor="#F39408"
+                android:paddingRight="20dp"
+                android:paddingLeft="30dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="10dp"
+                android:id="@+id/r1"
+                android:layout_below="@+id/img"
+                android:background="#E29696" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r1"
+                android:text="Verify YourSelf As Teacher"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:textSize="28dp"
+                android:textAlignment="center"
+                android:background="@drawable/borderedittext"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:inputType="none"
+                android:textColor="#F39408"
+                android:editable="false"
+                android:id="@+id/tri"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:id="@+id/r2"
+                android:layout_below="@id/tri"
+                android:background="#E29696" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/borderedittext"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="25dp"
+                android:hint="Enter Adhaar Number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_below="@id/r2"
+                android:inputType="number"
+                android:maxLength="12"
+                android:id="@+id/verifyid"/>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:textSize="27dp"
+                android:background="@drawable/borderedittext"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/verifyid"
+                android:textStyle="italic"
+                android:textColor="#F39408"
+                android:fontFamily="serif-monospace"
+                android:layout_centerInParent="true"
+                android:id="@+id/verifybutton"/>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="28dp"
+                android:textColor="#F39408"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/verifybutton"
+                android:id="@+id/sn"/>
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textSize="28dp"
+                android:background="@drawable/borderedittext"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/verifybutton"
+                android:layout_toRightOf="@id/sn"
+                android:id="@+id/verifyname"
+                android:editable="false"
+                android:inputType="none"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/r3"
+                android:layout_below="@id/verifyname"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Mobile: "
+                android:textSize="28dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:textColor="#F39408"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/r3"
+                android:id="@+id/sm"/>
+
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textSize="28dp"
+                android:background="@drawable/borderedittext"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/r3"
+                android:layout_toRightOf="@id/sm"
+                android:id="@+id/verifymobile"
+                android:editable="false"
+                android:inputType="none"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/r4"
+                android:layout_below="@id/verifymobile"
+                android:background="@color/colorAccent" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/r4"
+                android:layout_marginTop="20dp"
+                android:textColor="#F39408"
+                android:fontFamily="serif-monospace"
+                android:text="Proceed"
+                android:textStyle="italic"
+                android:textSize="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/borderedittext"
+                android:id="@+id/proceed"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

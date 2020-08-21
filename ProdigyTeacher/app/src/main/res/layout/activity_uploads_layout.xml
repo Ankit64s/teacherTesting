@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".uploads_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:background="@drawable/logo"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+            android:layout_marginTop="20dp"
+            android:text="Teacher Portal"
+            android:textSize="27dp"
+            android:textAllCaps="true"
+            android:background="#F3FAF9F9"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:fontFamily="serif-monospace"
+            android:paddingTop="25dp"
+            android:textColor="#F39408"
+            android:paddingRight="10dp"
+            android:paddingLeft="20dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear"
+        android:id="@+id/relative">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:text="Upload PDF"
+                android:textStyle="italic"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:fontFamily="monospace"
+                android:id="@+id/uploadpdfs"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#FF9800"/>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:text="Upload Image"
+                android:textStyle="italic"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:fontFamily="monospace"
+                android:id="@+id/uploadimages"
+                android:layout_below="@id/uploadpdfs"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#FF9800"/>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderedittext"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:text="Upload Link"
+                android:textStyle="italic"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:fontFamily="monospace"
+                android:id="@+id/uploadlink"
+                android:layout_below="@id/uploadimages"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#FF9800"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

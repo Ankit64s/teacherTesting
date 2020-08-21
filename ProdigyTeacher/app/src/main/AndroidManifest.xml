@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prodigyteacher">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view_links_uploads"></activity>
+        <activity android:name=".view_images_uploads" />
+        <activity android:name=".viewpdf" />
+        <activity android:name=".viewuploads" />
+        <activity android:name=".upload_youtube_link" />
+        <activity android:name=".upload_image" />
+        <activity android:name=".uploadpdf" />
+        <activity android:name=".uploads_layout" />
+        <activity android:name=".NoticesArea" />
+        <activity android:name=".attendance_layout" />
+        <activity android:name=".attendance" />
+        <activity android:name=".homework" />
+        <activity android:name=".student_list_layout" />
+        <activity android:name=".Student_List" />
+        <activity android:name=".Personal_Profile" />
+        <activity android:name=".verify_code" />
+        <activity android:name=".send_code" />
+        <activity android:name=".profile_teacher" />
+        <activity android:name=".login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

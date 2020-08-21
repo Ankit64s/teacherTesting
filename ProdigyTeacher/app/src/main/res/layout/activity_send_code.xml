@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".send_code">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:background="@drawable/logo"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+            android:layout_marginTop="20dp"
+            android:text="Login Portal"
+            android:textSize="30dp"
+            android:textAllCaps="true"
+            android:background="#F3FAF9F9"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:fontFamily="serif-monospace"
+            android:paddingTop="25dp"
+            android:textColor="#F39408"
+            android:paddingRight="20dp"
+            android:paddingLeft="30dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear"
+        android:layout_marginTop="10dp"
+        android:id="@+id/relative">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:background="@drawable/borderedittext"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:id="@+id/mobilepass"/>
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mobilepass"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_centerInParent="true"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:background="@drawable/borderedittext"
+                    android:textStyle="italic"
+                    android:text="Send Code"
+                    android:id="@+id/sendcode"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#F39408"
+                    android:fontFamily="serif-monospace"/>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
